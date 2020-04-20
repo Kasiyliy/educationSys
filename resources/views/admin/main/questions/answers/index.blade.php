@@ -13,7 +13,8 @@
                     </a>
                 </p>
                 <p>
-                    <a class="btn btn-success text-center" href="{{route('options.create', ['question_id' => $question->id])}}">
+                    <a class="btn btn-success text-center"
+                       href="{{route('options.create', ['question_id' => $question->id])}}">
                         <i class="fa fa-plus"></i>
                     </a>
                 </p>
@@ -26,46 +27,50 @@
                         <h6 class="m-0">Жауаптар</h6>
                     </div>
                     <div class="card-body p-0 pb-3 text-center">
-                        <table class="table mb-0">
-                            <thead class="bg-light">
-                            <tr>
-                                <th scope="col" class="border-0">#</th>
-                                <th scope="col" class="border-0">Жауап</th>
-                                <th scope="col" class="border-0">Дұрыстығы</th>
-                                <th scope="col" class="border-0">Іс-әрекет</th>
-
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($options as $answer)
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead class="bg-light">
                                 <tr>
-                                    <td>{{$answer->id}}</td>
-                                    <td>{{$answer->content}}</td>
-                                    <td>
-                                        @if($answer->is_right)
-                                            <i class="fa fa-check" style="color:#2dff12"></i>
-                                        @else <i class="fa fa-stop" style="color:red"></i>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        {{--                                        <a class="btn btn-outline-primary mb-2 "--}}
-                                        {{--                                           href="{{route('question.edit', ['id' => $course->id])}}">--}}
-                                        {{--                                            Жаңарту <i class="fa fa-edit"></i>--}}
-                                        {{--                                        </a>--}}
+                                    <th scope="col" class="border-0">#</th>
+                                    <th scope="col" class="border-0">Жауап</th>
+                                    <th scope="col" class="border-0">Дұрыстығы</th>
+                                    <th scope="col" class="border-0">Іс-әрекет</th>
 
-                                                                                <form class="d-inline" action="{{route('options.delete', ['id' => $answer->id])}}" method="post">
-                                                                                    {{csrf_field()}}
-                                                                                    <button type="submit" class="btn btn-outline-danger mb-2 "
-                                                                                            href="">
-                                                                                        Жою <i class="fa fa-trash"></i>
-                                                                                    </button>
-                                                                                </form>
-                                    </td>
                                 </tr>
-                            @endforeach
-                            </tbody>
+                                </thead>
+                                <tbody>
+                                @foreach($options as $answer)
+                                    <tr>
+                                        <td>{{$answer->id}}</td>
+                                        <td>{{$answer->content}}</td>
+                                        <td>
+                                            @if($answer->is_right)
+                                                <i class="fa fa-check" style="color:#2dff12"></i>
+                                            @else <i class="fa fa-stop" style="color:red"></i>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            {{--                                        <a class="btn btn-outline-primary mb-2 "--}}
+                                            {{--                                           href="{{route('question.edit', ['id' => $course->id])}}">--}}
+                                            {{--                                            Жаңарту <i class="fa fa-edit"></i>--}}
+                                            {{--                                        </a>--}}
 
-                        </table>
+                                            <form class="d-inline"
+                                                  action="{{route('options.delete', ['id' => $answer->id])}}"
+                                                  method="post">
+                                                {{csrf_field()}}
+                                                <button type="submit" class="btn btn-outline-danger mb-2 "
+                                                        href="">
+                                                    Жою <i class="fa fa-trash"></i>
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+
+                            </table>
+                        </div>
                     </div>
                     <div class="card-footer">
                         {{ $options->links() }}

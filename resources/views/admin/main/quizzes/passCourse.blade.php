@@ -13,7 +13,7 @@
                         <h6 class="m-0">Тест {{$quiz->name}}</h6>
                         @if($quizResult)
                             <p style="color:#ff3635">
-                                !Вы уже сдавали этот тест. Ваш результат {{$quizResult->result}}/{{$quiz->questions->count()}}</p>
+                                !Сіз бұл тестті тапсырғансыз. Сіздің нәтиже: {{$quizResult->result}}/{{$quiz->questions->count()}}</p>
                         @endif
                     </div>
                     <div class="card-body p-4 pb-3">

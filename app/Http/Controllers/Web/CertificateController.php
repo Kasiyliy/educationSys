@@ -67,7 +67,7 @@ class CertificateController extends WebBaseController
             ->where('qr.result', '>=', 50)
             ->where('qr.id', '=', $id)
             ->first();
-        $pdf = new Fpdi('L', 'mm', 'A4');
+        $pdf = new Fpdi('L', 'mm');
         $pdf->setSourceFile(public_path('certificate.pdf'));
         $fontName = "DejaVuSans";
         $pdf->AddFont($fontName, '', 'DejaVuSans.php');

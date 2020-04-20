@@ -3,9 +3,12 @@
 @section('content')
     <div class="content-wrapper">
         <div class="page-header row no-gutters py-4">
-            <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Менің курстарым</span>
-                <h3 class="page-title">Тізім</h3>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-uppercase page-title">Менің курстарым</h1>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">

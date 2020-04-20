@@ -3,20 +3,21 @@
 @section('content')
     <div class="content-wrapper">
         <div class="page-header row no-gutters py-4">
-            <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Сабақ</span>
-                <h3 class="page-title">
-
-                </h3>
-                <p>
-                    <a class="btn btn-success text-center" href="{{route('my.courses')}}">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                </p>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-uppercase page-title">Сабақ</h1>
+                        <h3 class="page-subtitle m-3 text-right">
+                            <a class="btn btn-success text-center" href="{{route('my.courses')}}">
+                                <i class="fa fa-arrow-left"></i> Артқа қарай бару
+                            </a>
+                        </h3>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-10  mb-4">
+            <div class="col-md-10 mb-4 col-12">
                 <div class="card card-small">
                     <div class="card-header border-bottom">
                         <h1>
@@ -28,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-12">
                 <p>Сабақтар тізімі</p>
                 <ul class="list-group">
                     @foreach($lessons as $index => $lesson)
