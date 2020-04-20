@@ -38,7 +38,7 @@ class CertificateController extends WebBaseController
             ->where('qr.user_id', '=', $userId)
             ->where('qr.result', '>=', 50)
             ->get();
-        
+
         return view('admin.main.certificates.index', compact('certificates'));
     }
 
