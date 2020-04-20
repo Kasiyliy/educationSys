@@ -1,187 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Edumark</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Team - Moderna Bootstrap Template</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('front/img/favicon.png')}}">
+    <!-- Place favicon.ico in the root directory -->
 
-    <!-- Favicons -->
-    <link href="{{asset("assets/img/favicon.png")}}" rel="icon">
-    <link href="{{asset("assets/img/apple-touch-icon.png")}}" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
-          rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="{{asset("assets/vendor/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
-    <link href="{{asset("assets/vendor/animate.css/animate.min.css")}}" rel="stylesheet">
-    <link href="{{asset("assets/vendor/icofont/icofont.min.css")}}" rel="stylesheet">
-    <link href="{{asset("assets/vendor/boxicons/css/boxicons.min.css")}}" rel="stylesheet">
-    <link href="{{asset("assets/vendor/venobox/venobox.css")}}" rel="stylesheet">
-    <link href="{{asset("assets/vendor/owl.carousel/assets/owl.carousel.min.css")}}" rel="stylesheet">
-    <link href="{{asset("assets/vendor/aos/aos.css")}}" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="{{asset("assets/css/style.css")}}" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: Moderna - v2.0.1
-    * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{asset("front/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/owl.carousel.min.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/magnific-popup.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/font-awesome.min.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/themify-icons.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/nice-select.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/flaticon.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/gijgo.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/animate.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/slicknav.css")}}">
+    <link rel="stylesheet" href="{{asset("front/css/style.css")}}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top ">
-    <div class="container">
-
-        <div class="logo float-left">
-            <h1 class="text-light"><a href="{{route('index')}}"><span>EasyStudy</span></a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
-
-        <nav class="nav-menu float-right d-none d-lg-block">
-            <ul>
-                <li><a href="{{route('index')}}">Басты</a></li>
-                <li><a href="{{route('about')}}">Біз жайлы</a></li>
-                <li><a href="{{route('services')}}">Қызметтер</a></li>
-                <li><a href="{{route('team')}}">Команда</a></li>
-                <li><a href="{{route('contact')}}">Бізбен хабарласу</a></li>
-                @guest
-                    <li>
-                        <a href="{{ route('login') }}">Кіру</a>
-                    </li>
-                    @if (Route::has('register'))
-                        <li>
-                            <a href="{{ route('register') }}">Тіркелу</a>
-                        </li>
-                    @endif
-                @else
-                    <li>
-                        <a href="{{route('home')}}">Жүйе</a>
-                    </li>
-                @endguest
-            </ul>
-        </nav><!-- .nav-menu -->
-
-    </div>
-</header><!-- End Header -->
-
-@yield('content')
-
-<!-- ======= Footer ======= -->
-<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <div class="footer-newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                </div>
-                <div class="col-lg-6">
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-info">
-                    <h3>About Moderna</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                    <div class="social-links mt-3">
-                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+<!-- header-start -->
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid p-0">
+                <div class="row align-items-center no-gutters">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo-img">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="{{route('index')}}">Басты</a></li>
+                                    <li><a href="{{route('about')}}">Біз жайлы</a></li>
+                                    <li><a href="{{route('contact')}}">Хабарласу</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="log_chat_area d-flex align-items-center">
+                            <a href="{{route('login')}}" class="login">
+                                <i class="flaticon-user"></i>
+                                <span>Кіру</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+</header>
+<!-- header-end -->
+@yield('content')
 
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+<!-- our_latest_blog_end -->
+
+
+<!-- footer -->
+<footer class="footer footer_bg_1">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="{{asset('front/img/logo.png')}}" alt="">
+                            </a>
+                        </div>
+                        <p>
+                            Firmament morning sixth subdue darkness creeping gathered divide our let god moving.
+                            Moving in fourth air night bring upon it beast let you dominion likeness open place day
+                            great.
+                        </p>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Courses
+                        </h3>
+                        <ul>
+                            <li><a href="#">Wordpress</a></li>
+                            <li><a href="#"> Photoshop</a></li>
+                            <li><a href="#">Illustrator</a></li>
+                            <li><a href="#">Adobe XD</a></li>
+                            <li><a href="#">UI/UX</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Resourches
+                        </h3>
+                        <ul>
+                            <li><a href="#">Free Adobe XD</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#"> About</a></li>
+                            <li><a href="#"> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Address
+                        </h3>
+                        <p>
+                            200, D-block, Green lane USA <br>
+                            +10 367 467 8934 <br>
+                            edumark@contact.com
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</footer><!-- End Footer -->
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                            aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer -->
 
-<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="{{asset("assets/vendor/jquery/jquery.min.js")}}"></script>
-<script src="{{asset("assets/vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
-<script src="{{asset("assets/vendor/jquery.easing/jquery.easing.min.js")}}"></script>
-<script src="{{asset("assets/vendor/php-email-form/validate.js")}}"></script>
-<script src="{{asset("assets/vendor/venobox/venobox.min.js")}}"></script>
-<script src="{{asset("assets/vendor/waypoints/jquery.waypoints.min.js")}}"></script>
-<script src="{{asset("assets/vendor/counterup/counterup.min.js")}}"></script>
-<script src="{{asset("assets/vendor/owl.carousel/owl.carousel.min.js")}}"></script>
-<script src="{{asset("assets/vendor/isotope-layout/isotope.pkgd.min.js")}}"></script>
-<script src="{{asset("assets/vendor/aos/aos.js")}}"></script>
+<!-- form itself end-->
+<form id="test-form" class="white-popup-block mfp-hide">
+    <div class="popup_box ">
+        <div class="popup_inner">
+            <div class="logo text-center">
+                <a href="#">
+                    <img src="{{asset('front/img/form-logo.png')}}" alt="">
+                </a>
+            </div>
+            <h3>Sign in</h3>
+            <form action="#">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12">
+                        <input type="email" placeholder="Enter email">
+                    </div>
+                    <div class="col-xl-12 col-md-12">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="col-xl-12">
+                        <button type="submit" class="boxed_btn_orange">Sign in</button>
+                    </div>
+                </div>
+            </form>
+            <p class="doen_have_acc">Don’t have an account? <a class="dont-hav-acc" href="#test-form2">Sign Up</a>
+            </p>
+        </div>
+    </div>
+</form>
+<!-- form itself end -->
 
-<!-- Template Main JS File -->
-<script src="{{asset("assets/js/main.js")}}"></script>
+<!-- form itself end-->
+<form id="test-form2" class="white-popup-block mfp-hide">
+    <div class="popup_box ">
+        <div class="popup_inner">
+            <div class="logo text-center">
+                <a href="#">
+                    <img src="{{asset('front/img/form-logo.png')}}" alt="">
+                </a>
+            </div>
+            <h3>Resistration</h3>
+            <form action="#">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12">
+                        <input type="email" placeholder="Enter email">
+                    </div>
+                    <div class="col-xl-12 col-md-12">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="col-xl-12 col-md-12">
+                        <input type="Password" placeholder="Confirm password">
+                    </div>
+                    <div class="col-xl-12">
+                        <button type="submit" class="boxed_btn_orange">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
+<!-- form itself end -->
 
+
+<!-- JS here -->
+<script src="{{asset("front/js/vendor/modernizr-3.5.0.min.js")}}"></script>
+<script src="{{asset("front/js/vendor/jquery-1.12.4.min.js")}}"></script>
+<script src="{{asset("front/js/popper.min.js")}}"></script>
+<script src="{{asset("front/js/bootstrap.min.js")}}"></script>
+<script src="{{asset("front/js/owl.carousel.min.js")}}"></script>
+<script src="{{asset("front/js/isotope.pkgd.min.js")}}"></script>
+<script src="{{asset("front/js/ajax-form.js")}}"></script>
+<script src="{{asset("front/js/waypoints.min.js")}}"></script>
+<script src="{{asset("front/js/jquery.counterup.min.js")}}"></script>
+<script src="{{asset("front/js/imagesloaded.pkgd.min.js")}}"></script>
+<script src="{{asset("front/js/scrollIt.js")}}"></script>
+<script src="{{asset("front/js/jquery.scrollUp.min.js")}}"></script>
+<script src="{{asset("front/js/wow.min.js")}}"></script>
+<script src="{{asset("front/js/nice-select.min.js")}}"></script>
+<script src="{{asset("front/js/jquery.slicknav.min.js")}}"></script>
+<script src="{{asset("front/js/jquery.magnific-popup.min.js")}}"></script>
+<script src="{{asset("front/js/plugins.js")}}"></script>
+<script src="{{asset("front/js/gijgo.min.js")}}"></script>
+
+<!--contact js-->
+<script src="{{asset("front/js/contact.js")}}"></script>
+<script src="{{asset("front/js/jquery.ajaxchimp.min.js")}}"></script>
+<script src="{{asset("front/js/jquery.form.js")}}"></script>
+<script src="{{asset("front/js/jquery.validate.min.js")}}"></script>
+<script src="{{asset("front/js/mail-script.js")}}"></script>
+
+<script src="{{asset("front/js/main.js")}}"></script>
 </body>
 
 </html>

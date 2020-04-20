@@ -1,224 +1,341 @@
-@extends('layouts.front')
+@extends("layouts.front")
 
-@section('content')
-<main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section class="breadcrumbs">
-        <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-                <h2>About Us</h2>
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>About Us</li>
-                </ol>
-            </div>
-
+@section("content")
+        <!-- bradcam_area_start -->
+        <div class="bradcam_area breadcam_bg overlay2">
+            <h3>About Us</h3>
         </div>
-    </section><!-- End About Us Section -->
+        <!-- bradcam_area_end -->
 
-    <!-- ======= About Section ======= -->
-    <section class="about" data-aos="fade-up">
+    <!-- about_area_start -->
+    <div class="about_area">
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-6">
-                    <img src="../../../public/assets/img/about.jpg" class="img-fluid" alt="">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="single_about_info">
+                        <h3>Over 7000 Tutorials <br>
+                            from 20 Courses</h3>
+                        <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let god
+                            moving. Moving in fourth air night bring upon you’re it beast let you dominion likeness open
+                            place day great wherein heaven sixth lesser subdue fowl </p>
+                        <a href="#" class="boxed_btn">Enroll a Course</a>
+                    </div>
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0">
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                    <p class="font-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
-                    </p>
-                    <ul>
-                        <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.
-                        </li>
-                        <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate
-                            velit.
-                        </li>
-                        <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
-                            mastiro dolore eu fugiat nulla pariatur.
-                        </li>
-                    </ul>
-                    <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum
-                    </p>
+                <div class="col-xl-6 offset-xl-1 col-lg-6">
+                    <div class="about_tutorials">
+                        <div class="courses">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>20+</span>
+                                    <p> Courses</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-blue">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>7638</span>
+                                    <p> Courses</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="courses-sky">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>230+</span>
+                                    <p> Courses</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </section><!-- End About Section -->
+    </div>
+    <!-- about_area_end -->
 
-    <!-- ======= Facts Section ======= -->
-    <section class="facts section-bg" data-aos="fade-up">
+    <!-- our_team_member_start -->
+    <div class="our_team_member">
         <div class="container">
-
-            <div class="row counters">
-
-                <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">232</span>
-                    <p>Clients</p>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/1.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Macau Wilium</h3>
+                            <p>Massage Master</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">521</span>
-                    <p>Projects</p>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/2.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Dan Jacky</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">1,463</span>
-                    <p>Hours Of Support</p>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/3.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Luka Luka</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">15</span>
-                    <p>Hard Workers</p>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/4.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Rona Dana</h3>
+                            <p>Ladies Cut</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-    </section><!-- End Facts Section -->
+    </div>
+    <!-- our_team_member_end -->
 
-    <!-- ======= Our Skills Section ======= -->
-    <section class="skills" data-aos="fade-up">
+    <!-- testimonial_area_start -->
+    <div class="testimonial_area testimonial_bg_1 overlay">
+        <div class="testmonial_active owl-carousel">
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
+                                    programmes to <br>
+                                    alleviate.
+                                    human suffering.
+
+                                </p>
+                                <span>- Jquileen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
+                                    programmes to <br>
+                                    alleviate.
+                                    human suffering.
+
+                                </p>
+                                <span>- Jquileen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial_area_end -->
+
+    <!-- our_courses_start -->
+    <div class="our_courses">
         <div class="container">
-
-            <div class="section-title">
-                <h2>Our Skills</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Course Speciality</h3>
+                        <p>Your domain control panel is designed for ease-of-use and <br>
+                            allows for all aspects of your domains.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="skills-content">
-
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <span class="skill">HTML <i class="val">100%</i></span>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
+                        </p>
                     </div>
                 </div>
-
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
+                        </p>
                     </div>
                 </div>
-
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
+                        </p>
                     </div>
                 </div>
-
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                         aria-valuemax="100">
-                        <span class="skill">Photoshop <i class="val">55%</i></span>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon gradient">
+                            <i class="flaticon-crown"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
+                        </p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-    </section><!-- End Our Skills Section -->
+    </div>
+    <!-- our_courses_end -->
 
-    <!-- ======= Tetstimonials Section ======= -->
-    <section class="testimonials" data-aos="fade-up">
+    <!-- subscribe_newsletter_Start -->
+    <div class="subscribe_newsletter">
         <div class="container">
-
-            <div class="section-title">
-                <h2>Tetstimonials</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="newsletter_text">
+                        <h3>Subscribe Newsletter</h3>
+                        <p>Your domain control panel is designed for ease-of-use and allows for all aspects of your</p>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="newsletter_form">
+                        <h4>Your domain control panel is</h4>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <div class="owl-carousel testimonials-carousel">
-
-                <div class="testimonial-item">
-                    <img src="../../../public/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
-                         alt="">
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                    <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="../../../public/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
-                         alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                    <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-                        malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="../../../public/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
-                         alt="">
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                    <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                        minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="../../../public/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
-                         alt="">
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
-                    <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                        velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                        veniam.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="../../../public/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
-                         alt="">
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                    <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                        culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                        quid.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                </div>
-
-            </div>
-
         </div>
-    </section><!-- End Ttstimonials Section -->
+    </div>
+    <!-- subscribe_newsletter_end -->
 
-</main><!-- End #main -->
+    <!-- our_latest_blog_start -->
+    <div class="our_latest_blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Latest Blog</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/1.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>12 Jun, 2019 in <a href="#">Design tips</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Commitment to dedicated Support</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Firmament morning sixth subdue darkness creeping gathered divide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/2.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>12 Jun, 2019 in <a href="#">Design tips</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Commitment to dedicated Support</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Firmament morning sixth subdue darkness creeping gathered divide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/3.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>12 Jun, 2019 in <a href="#">Design tips</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Commitment to dedicated Support</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Firmament morning sixth subdue darkness creeping gathered divide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_latest_blog_end -->
 @endsection

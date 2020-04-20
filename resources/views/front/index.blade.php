@@ -1,176 +1,190 @@
-@extends('layouts.front')
+@extends("layouts.front")
 
-@section('content')
-    <main id="main">
-
-        <!-- ======= Services Section ======= -->
-        <section class="services">
+@section("content")
+    <!-- slider_area_start -->
+    <div class="slider_area ">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
             <div class="container">
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                        <div class="icon-box icon-box-pink">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4 class="title"><a href="">Жаттығуды өз қарқыңмен жүргіз</a></h4>
-                            <p class="description">Білім негізінен ұмытып кеткен нәрселерден тұрады, оңай және қарапайым есте сақтауға көмектесеміз</p>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="illastrator_png">
+                            <img src="{{asset('front/img/banner/edu_ilastration.png')}}" alt="">
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box icon-box-cyan">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4 class="title"><a href="">Жетекші мамандардан үйреніңіз</a></h4>
-                            <p class="description">Бүкіл Қазақстан бойынша ең жақсы мұғалімдерді таңдаңыз</p>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="slider_info">
+                            <h3>Learn your <br>
+                                Favorite Course <br>
+                                From Online</h3>
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-green">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4 class="title"><a href="">Жаттығуды тәжірибеге енгізіңіз</a></h4>
-                            <p class="description">Нақты жобалардағы жаттығуларыңызды қолданыңыз және жеке тесттермен біліміңізді тексеріңіз.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-blue">
-                            <div class="icon"><i class="bx bx-world"></i></div>
-                            <h4 class="title"><a href="">Армандағы жұмысыңызды табыңыз</a></h4>
-                            <p class="description">Кодтау дағдылары ешқашан сұранысқа ие болған емес. Мансапты келесі деңгейге көтеру үшін не қажет екенін біліп алыңыз.</p>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
-        </section><!-- End Services Section -->
+        </div>
+    </div>
+    <!-- slider_area_end -->
 
-        <!-- ======= Why Us Section ======= -->
-        <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-6 video-box">
-                        <img src="{{asset("assets/img/why-us.jpg")}}" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4"
-                           data-vbtype="video" data-autoplay="true"></a>
-                    </div>
-
-                    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">ЖЕҢІЛ ҮЙРЕН </a></h4>
-                            <p class="description">БҰЛ IT-МАМАНДАРЫНАН ӘРТҮРЛІ МӘЛІМЕТТЕРДІ ТАБА АЛАТЫН ЕҢ ДАМЫҒАН БАҒДАРЛАМАЛАУ МЕКТЕПТЕРІНІҢ БІРІ. НЕГІЗДЕРДІ ИГЕРІП, ЖАҢА ДЕҢГЕЙГЕ КӨТЕРІЛГІСІ КЕЛЕТІНДЕРДІҢ БАРЛЫҒЫНА ЖАҚСЫ ҰСЫНЫС.</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-
+    <!-- about_area_start -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="single_about_info">
+                        <h3>Over 7000 Tutorials <br>
+                            from 20 Courses</h3>
+                        <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let god
+                            moving. Moving in fourth air night bring upon you’re it beast let you dominion likeness open
+                            place day great wherein heaven sixth lesser subdue fowl </p>
+                        <a href="#" class="boxed_btn">Enroll a Course</a>
                     </div>
                 </div>
+                <div class="col-xl-6 offset-xl-1 col-lg-6">
+                    <div class="about_tutorials">
+                        <div class="courses">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>20+</span>
+                                    <p> Courses</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-blue">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>7638</span>
+                                    <p> Courses</p>
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="courses-sky">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>230+</span>
+                                    <p> Courses</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section><!-- End Why Us Section -->
+        </div>
+    </div>
+    <!-- about_area_end -->
+    <!-- testimonial_area_start -->
+    <div class="testimonial_area testimonial_bg_1 overlay">
+        <div class="testmonial_active owl-carousel">
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="{{asset('front/img/testmonial/author_img.png')}}" alt="">
+                                </div>
+                                <p>
+                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
+                                    programmes to <br>
+                                    alleviate.
+                                    human suffering.
 
-        <!-- ======= Features Section ======= -->
-        <section class="features">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Features</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="{{asset("assets/img/features-1.svg")}}" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-4">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
-                            </li>
-                        </ul>
+                                </p>
+                                <span>- Jquileen</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="{{asset('front/img/testmonial/author_img.png')}}" alt="">
+                                </div>
+                                <p>
+                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
+                                    programmes to <br>
+                                    alleviate.
+                                    human suffering.
 
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <img src="{{asset("assets/img/features-2.svg")}}" class="img-fluid" alt="">
+                                </p>
+                                <span>- Jquileen</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-7 pt-5 order-2 order-md-1">
-                        <h3>Corporis temporibus maiores provident</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial_area_end -->
+
+    <!-- our_courses_start -->
+    <div class="our_courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Course Speciality</h3>
+                        <p>Your domain control panel is designed for ease-of-use and <br>
+                            allows for all aspects of your domains.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
                         </p>
                     </div>
                 </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="{{asset("assets/img/features-3.svg")}}" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5">
-                        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe
-                            odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
-                            </li>
-                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <img src="{{asset("assets/img/features-4.svg")}}" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5 order-2 order-md-1">
-                        <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
-                        </p>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
                         </p>
                     </div>
                 </div>
-
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon gradient">
+                            <i class="flaticon-crown"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            Your domain control panel is designed for ease-of-use <br> and <br>
+                            allows for all aspects of
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section><!-- End Features Section -->
-
-    </main>
+        </div>
+    </div>
+    <!-- our_courses_end -->
 @endsection
