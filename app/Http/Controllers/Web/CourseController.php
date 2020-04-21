@@ -79,8 +79,12 @@ class CourseController extends WebBaseController
 
     public function delete($id)
     {
-        $lesson = Course::findOrFail($id);
-        $lesson->delete();
+        $course = Course::findOrFail($id);
+
+        if ($course && $course->quiz) {
+            $course->quiz->delete();
+        }
+        $course->delete();
         return redirect()->back();
     }
 
