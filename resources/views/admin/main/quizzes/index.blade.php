@@ -31,17 +31,19 @@
                                 </thead>
                                 <tbody>
                                 @foreach($quizzes as $quiz)
-                                    <tr>
-                                        <td>{{$quiz->id}}</td>
-                                        <td>{{$quiz->name}}</td>
-                                        <td>{{$quiz->course->name}}</td>
-                                        <td>
-                                            <a class="btn btn-outline-primary mb-2 "
-                                               href="{{route('quizzes.pass', ['id' => $quiz->id])}}">
-                                                Тапсыру <i class="fa fa-book"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    @if($quiz->course)
+                                        <tr>
+                                            <td>{{$quiz->id}}</td>
+                                            <td>{{$quiz->name}}</td>
+                                            <td>{{$quiz->course->name}}</td>
+                                            <td>
+                                                <a class="btn btn-outline-primary mb-2 "
+                                                   href="{{route('quizzes.pass', ['id' => $quiz->id])}}">
+                                                    Тапсыру <i class="fa fa-book"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    @endif
                                 @endforeach
                                 </tbody>
 
