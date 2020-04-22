@@ -1,85 +1,106 @@
 @extends("layouts.front")
 <!-- bradcam_area_start -->
 @section("content")
-<div class="bradcam_area breadcam_bg overlay2">
-    <h3>contact us</h3>
-</div>
-<!-- bradcam_area_end -->
+    <div class="bradcam_area breadcam_bg overlay2">
+        <h3>contact us</h3>
+    </div>
+    <!-- bradcam_area_end -->
 
-<!-- ================ contact section start ================= -->
-<section class="contact-section">
-    <div class="container">
-        <div class="d-none d-sm-block mb-5 pb-4">
-            <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001033019388/center/76.9290590286255,43.23647253133347/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/firm/70000001033019388/photos/70000001033019388/center/76.9290590286255,43.23647253133347/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.872171,43.218397/zoom/17/routeTab/rsType/bus/to/76.872171,43.218397╎Нархоз, колледж?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Нархоз, колледж</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%","height":800,"borderColor":"#a3a3a3","pos":{"lat":43.23647253133347,"lon":76.9290590286255,"zoom":17},"opt":{"city":"almaty"},"org":[{"id":"70000001033019388"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-        </div>
-
-
-        <div class="row">
-            <div class="col-12">
-                <h2 class="contact-title">Get in Touch</h2>
+    <!-- ================ contact section start ================= -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="d-none d-sm-block mb-5 pb-4">
+                <a class="dg-widget-link"
+                   href="http://2gis.kz/almaty/firm/9429940000796143/center/76.931312084198,43.23760588547131/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+                    на карте Алматы</a>
+                <div class="dg-widget-link"><a
+                            href="http://2gis.kz/almaty/firm/9429940000796143/photos/9429940000796143/center/76.931312084198,43.23760588547131/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии
+                        компании</a></div>
+                <div class="dg-widget-link"><a
+                            href="http://2gis.kz/almaty/center/76.931311,43.237319/zoom/16/routeTab/rsType/bus/to/76.931311,43.237319╎Satbayev University, университет?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+                        проезд до Satbayev University, университет</a></div>
+                <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                <script charset="utf-8">new DGWidgetLoader({
+                        "width": "100%",
+                        "height": 800,
+                        "borderColor": "#a3a3a3",
+                        "pos": {"lat": 43.23760588547131, "lon": 76.931312084198, "zoom": 16},
+                        "opt": {"city": "almaty"},
+                        "org": [{"id": "9429940000796143"}]
+                    });</script>
+                <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript.
+                    Включите его в настройках вашего браузера.
+                </noscript>
             </div>
-            <div class="col-lg-8">
-                <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
-                      novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-group">
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title">Get in Touch</h2>
+                </div>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+                          novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
                                 <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
                                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
                                           placeholder=" Name"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text"
+                                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+                                           placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email"
+                                           onfocus="this.placeholder = ''"
+                                           onblur="this.placeholder = 'Enter email address'"
+                                           placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="subject" id="subject" type="text"
+                                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+                                           placeholder="Enter Subject">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control valid" name="name" id="name" type="text"
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
-                                       placeholder="Enter your name">
-                            </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="button button-contactForm boxed-btn">Send</button>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control valid" name="email" id="email" type="email"
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
-                                       placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
-                                <input class="form-control" name="subject" id="subject" type="text"
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
-                                       placeholder="Enter Subject">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-3 offset-lg-1">
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-home"></i></span>
-                    <div class="media-body">
-                        <h3>Buttonwood, California.</h3>
-                        <p>Rosemead, CA 91770</p>
-                    </div>
+                    </form>
                 </div>
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                    <div class="media-body">
-                        <h3>+1 253 565 2365</h3>
-                        <p>Mon to Fri 9am to 6pm</p>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>Buttonwood, California.</h3>
+                            <p>Rosemead, CA 91770</p>
+                        </div>
                     </div>
-                </div>
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-email"></i></span>
-                    <div class="media-body">
-                        <h3>support@colorlib.com</h3>
-                        <p>Send us your query anytime!</p>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>+1 253 565 2365</h3>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>support@colorlib.com</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 @endsection
